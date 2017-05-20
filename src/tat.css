@@ -1,35 +1,33 @@
 /*!
-TAT CSS v0.5
+TAT CSS v0.6
 */
+
+/* CONTAINERS */
 
 [class*=tat-r],
 [class*=tat-c],
-[class*=tat-g]{ 
+[class*=tat-g],
+[class*=tat-n]{ 
     display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
 }
 
-/* Single row/column grids */
+/* Single row/column containers */
 .tat-r { 
-    display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
 	-webkit-flex-flow: row nowrap; -ms-flex-flow: row nowrap; flex-flow: row nowrap;  
 }
 .tat-r-r { 
-    display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
 	-webkit-flex-flow: row-reverse nowrap; -ms-flex-flow: row-reverse nowrap; flex-flow: row-reverse nowrap;  
 }
 .tat-c { 
-    display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
     -webkit-flex-flow: column nowrap; -ms-flex-flow: column nowrap; flex-flow: column nowrap; 
 }
 .tat-c-r { 
-    display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
 	-webkit-flex-flow: column-reverse nowrap; -ms-flex-flow: column-reverse nowrap; flex-flow: column-reverse nowrap; 
 }
 
 
-/* Multi row grids */
+/* Multiple rows/columns grids */
 .tat-g {
-    display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
     -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap;
     /* alignment horizontal */
 	-webkit-justify-content: flex-start; -moz-justify-content: flex-start; justify-content: flex-start;
@@ -37,19 +35,16 @@ TAT CSS v0.5
     -webkit-align-content: flex-start; -ms-flex-line-pack: start; align-content: flex-start;  
 }
 .tat-g-r { 
-    display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
 	-webkit-flex-flow: row-reverse wrap; -ms-flex-flow: row-reverse wrap; flex-flow: row-reverse wrap;  
 }
-.tat-g-c { 
-    display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
+.tat-n { 
     -webkit-flex-flow: column wrap; -ms-flex-flow: column wrap; flex-flow: column wrap; 
 }
-.tat-g-c-r { 
-    display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
+.tat-n-r { 
 	-webkit-flex-flow: column-reverse wrap; -ms-flex-flow: column-reverse wrap; flex-flow: column-reverse wrap; 
 }
 
-/* Grid alignments */
+/* Alignments */
 .tat-center {
 	-webkit-justify-content: center; -moz-justify-content: center; justify-content: center;
 }
@@ -81,7 +76,8 @@ TAT CSS v0.5
 /* Self alignments - TO DO */
 
 
-/* Grid - media queries */
+/* Containers - media queries */
+
 @media screen and (min-width:35.5em){
 	.tat-c-sm { 
     	-webkit-flex-flow: column nowrap; -ms-flex-flow: column nowrap; flex-flow: column nowrap; 
@@ -247,7 +243,9 @@ TAT CSS v0.5
 	}
 }
 
-/* Flex units: 1/12 max proportion */
+/* UNITS */
+
+/* Flexible units */
 
 .tat-f-0-1 {
 	flex: 0 1 auto;
@@ -283,30 +281,24 @@ TAT CSS v0.5
 .tat-f-5 {
 	flex-grow: 5;
 }
-.tat-f-6 {
-	flex-grow: 6;
-}
-.tat-f-7 {
-	flex-grow: 7;
-}
-.tat-f-8 {
-	flex-grow: 8;
-}
-.tat-f-9 {
-	flex-grow: 9;
-}
-.tat-f-10 {
-	flex-grow: 10;
-}
-.tat-f-11 {
-	flex-grow: 11;
-}
 
 .tat-f--0 {
 	flex-shrink: 0;
 }
 .tat-f--1 {
 	flex-shrink: 1;
+}
+.tat-f--2 {
+	flex-shrink: 2;
+}
+.tat-f--3 {
+	flex-shrink: 3;
+}
+.tat-f--4 {
+	flex-shrink: 4;
+}
+.tat-f--5 {
+	flex-shrink: 5;
 }
 
 
@@ -437,10 +429,6 @@ TAT CSS v0.5
 }
 
 @media screen and (min-width:35.5em){
-
-	.tat-u-sm-1 {
-	    width: 100%;
-	}
 	
 	.tat-u-sm-1-24 {
 	    width: 4.1667%;
@@ -561,10 +549,6 @@ TAT CSS v0.5
 
 
 @media screen and (min-width:48em){
-
-	.tat-u-md-1 {
-	    width: 100%;
-	}
 	
 	.tat-u-md-1-24 {
 	    width: 4.1667%;
@@ -685,10 +669,6 @@ TAT CSS v0.5
 
 
 @media screen and (min-width:64em){
-
-	.tat-u-lg-1 {
-	    width: 100%;
-	}
 	
 	.tat-u-lg-1-24 {
 	    width: 4.1667%;
@@ -809,10 +789,6 @@ TAT CSS v0.5
 
 
 @media screen and (min-width:80em){
-
-	.tat-u-xl-1 {
-	    width: 100%;
-	}
 	
 	.tat-u-xl-1-24 {
 	    width: 4.1667%;
@@ -931,4 +907,6 @@ TAT CSS v0.5
 	}
 }
 
-.tat-img { width: 100%; height: auto; }
+/* Other */
+.tat-fill, .tat-img { width: 100%; height: auto; }
+.tat-contain { max-width: 100%; width: auto; max-height: 100%; height: auto; }
