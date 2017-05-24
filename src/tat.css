@@ -1,5 +1,5 @@
 /*!
-TAT CSS v0.6
+TAT CSS v0.7
 */
 
 /* CONTAINERS */
@@ -75,6 +75,12 @@ TAT CSS v0.6
 
 /* Self alignments - TO DO */
 
+.tat-s-top { }
+.tat-s-bottom { }
+.tat-s-middle { }
+.tat-s-left { }
+.tat-s-right { }
+.tat-s-center { }
 
 /* Containers - media queries */
 
@@ -90,6 +96,18 @@ TAT CSS v0.6
 	}
 	.tat-r-r-sm { 
 		-webkit-flex-flow: row-reverse nowrap; -ms-flex-flow: row-reverse nowrap; flex-flow: row-reverse nowrap;  
+	}
+	.tat-g-sm {
+	    -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap;  
+	}
+	.tat-g-r-sm {
+	    -webkit-flex-flow: row-reverse wrap; -ms-flex-flow: row-reverse wrap; flex-flow: row-reverse wrap;  
+	}
+	.tat-n-sm {
+	    -webkit-flex-flow: column wrap; -ms-flex-flow: column wrap; flex-flow: column wrap;  
+	}
+	.tat-n-r-sm {
+	    -webkit-flex-flow: column-reverse wrap; -ms-flex-flow: column-reverse wrap; flex-flow: column-reverse wrap;  
 	}
 	.tat-center-sm {
 		-webkit-justify-content: center; -moz-justify-content: center; justify-content: center;
@@ -132,6 +150,18 @@ TAT CSS v0.6
 	.tat-r-r-md { 
 		-webkit-flex-flow: row-reverse nowrap; -ms-flex-flow: row-reverse nowrap; flex-flow: row-reverse nowrap;  
 	}
+	.tat-g-md {
+	    -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap;  
+	}
+	.tat-g-r-md {
+	    -webkit-flex-flow: row-reverse wrap; -ms-flex-flow: row-reverse wrap; flex-flow: row-reverse wrap;  
+	}
+	.tat-n-md {
+	    -webkit-flex-flow: column wrap; -ms-flex-flow: column wrap; flex-flow: column wrap;  
+	}
+	.tat-n-r-md {
+	    -webkit-flex-flow: column-reverse wrap; -ms-flex-flow: column-reverse wrap; flex-flow: column-reverse wrap;  
+	}
 	.tat-center-md {
 		-webkit-justify-content: center; -moz-justify-content: center; justify-content: center;
 	}
@@ -173,6 +203,18 @@ TAT CSS v0.6
 	.tat-r-r-lg { 
 		-webkit-flex-flow: row-reverse nowrap; -ms-flex-flow: row-reverse nowrap; flex-flow: row-reverse nowrap;  
 	}
+	.tat-g-lg {
+	    -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap;  
+	}
+	.tat-g-r-lg {
+	    -webkit-flex-flow: row-reverse wrap; -ms-flex-flow: row-reverse wrap; flex-flow: row-reverse wrap;  
+	}
+	.tat-n-lg {
+	    -webkit-flex-flow: column wrap; -ms-flex-flow: column wrap; flex-flow: column wrap;  
+	}
+	.tat-n-r-lg {
+	    -webkit-flex-flow: column-reverse wrap; -ms-flex-flow: column-reverse wrap; flex-flow: column-reverse wrap;  
+	}
 	.tat-center-lg {
 		-webkit-justify-content: center; -moz-justify-content: center; justify-content: center;
 	}
@@ -213,6 +255,18 @@ TAT CSS v0.6
 	}
 	.tat-r-r-xl { 
 		-webkit-flex-flow: row-reverse nowrap; -ms-flex-flow: row-reverse nowrap; flex-flow: row-reverse nowrap;  
+	}
+	.tat-g-xl {
+	    -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap;  
+	}
+	.tat-g-r-xl {
+	    -webkit-flex-flow: row-reverse wrap; -ms-flex-flow: row-reverse wrap; flex-flow: row-reverse wrap;  
+	}
+	.tat-n-xl {
+	    -webkit-flex-flow: column wrap; -ms-flex-flow: column wrap; flex-flow: column wrap;  
+	}
+	.tat-n-r-xl {
+	    -webkit-flex-flow: column-reverse wrap; -ms-flex-flow: column-reverse wrap; flex-flow: column-reverse wrap;  
 	}
 	.tat-center-xl {
 		-webkit-justify-content: center; -moz-justify-content: center; justify-content: center;
