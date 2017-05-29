@@ -1,5 +1,5 @@
 /*!
-TAT CSS v0.7
+TAT CSS v0.8
 */
 
 /* CONTAINERS */
@@ -69,6 +69,9 @@ TAT CSS v0.7
 .tat-bottom {
 	-ms-flex-align: end; -webkit-box-align: end; -webkit-align-items: flex-end; align-items: flex-end; 
 }
+.tat-stretch {
+	-ms-flex-align: stretch; -webkit-box-align: stretch; -webkit-align-items: stretch; align-items: stretch; 
+}
 .tat-vspace {
 	-webkit-align-content: space-between; -ms-flex-line-pack: space-between; align-content: space-between; 
 }
@@ -133,6 +136,9 @@ TAT CSS v0.7
 	.tat-bottom-sm {
 		-ms-flex-align: end; -webkit-box-align: end; -webkit-align-items: flex-end; align-items: flex-end; 
 	}
+	.tat-stretch-sm {
+		-ms-flex-align: stretch; -webkit-box-align: stretch; -webkit-align-items: stretch; align-items: stretch; 
+	}
 	.tat-vspace-sm {
 		-webkit-align-content: space-between; -ms-flex-line-pack: space-between; align-content: space-between; 
 	}
@@ -185,6 +191,9 @@ TAT CSS v0.7
 	}
 	.tat-bottom-md {
 		-ms-flex-align: end; -webkit-box-align: end; -webkit-align-items: flex-end; align-items: flex-end; 
+	}
+	.tat-stretch-md {
+		-ms-flex-align: stretch; -webkit-box-align: stretch; -webkit-align-items: stretch; align-items: stretch; 
 	}
 	.tat-vspace-md {
 		-webkit-align-content: space-between; -ms-flex-line-pack: space-between; align-content: space-between; 
@@ -239,6 +248,9 @@ TAT CSS v0.7
 	.tat-bottom-lg {
 		-ms-flex-align: end; -webkit-box-align: end; -webkit-align-items: flex-end; align-items: flex-end; 
 	}
+	.tat-stretch-lg {
+		-ms-flex-align: stretch; -webkit-box-align: stretch; -webkit-align-items: stretch; align-items: stretch; 
+	}
 	.tat-vspace-lg {
 		-webkit-align-content: space-between; -ms-flex-line-pack: space-between; align-content: space-between; 
 	}
@@ -291,6 +303,9 @@ TAT CSS v0.7
 	}
 	.tat-bottom-xl {
 		-ms-flex-align: end; -webkit-box-align: end; -webkit-align-items: flex-end; align-items: flex-end; 
+	}
+	.tat-stretch-xl {
+		-ms-flex-align: stretch; -webkit-box-align: stretch; -webkit-align-items: stretch; align-items: stretch; 
 	}
 	.tat-vspace-xl {
 		-webkit-align-content: space-between; -ms-flex-line-pack: space-between; align-content: space-between; 
