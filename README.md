@@ -9,16 +9,16 @@ CSS flexbox is already at around 98% browser support by usage. Thus, it is time 
 This frameworks aims to:
 - be very lightweight
 - provide only the most common usages of flexbox and leave all the rest to your projects stylesheets
-- deal only with layouts. No design-related stuff at all.
+- deal only with layouts. No design-related stuff at all
 - skip flexbox options that still have low support
 
-Please have in mind that TAT is still in development. Until version 1.0 the naming of some elements might change. 
+TAT.CSS is now in version 1.0 and can be safely used in your projects.
 
 Get Started
 -----------
 
 There is only one file you need to include: tat.min.css
-Doing a CSS reset/normalise is up to you and is not included.
+Doing a CSS reset/normalise is up to you and is not included, but have in mind that you should probably set box-sizing to border-box to your grid elements.
 
 **Naming logic**
 
@@ -36,9 +36,15 @@ Every grid can be reversed in order by adding the "-r" parameter, i.e. "tat-c-r"
 
 **Grid alignments**
 
-The horizontal alignment options are: tat-center, tat-left, tat-right, tat-hspace, tat-heven
+The main axis alignment options are: tat-center, tat-left, tat-right, tat-hspace, tat-heven
 
-The vertical alignments are: tat-top, tat-middle, tat-bottom, tat-vspace
+The secondary axis alignments are: tat-top, tat-middle, tat-bottom, tat-vspace
+
+Important: remember these actually deal with you main axis, but are named as if your main axis is horizontal. So if using a column (vertical) grid than "left" will mean "top" in absolute terms and so forth. 
+
+**Element alignments**
+
+There are currently for options that have good browser support - top, bottom, center and stretch (remember, these are along the secondary axis, not the main one!). The prefix is "tat-s", i.e. "tat-s-top".
 
 **Media queries**
 
@@ -60,8 +66,6 @@ The "flex" unit in flexbox is very powerful and has plenty of use-cases in respo
 - tat-f-1-0 - element will grow to fill up space but will not shrink below its predefined width
 - tat-f-0-0 - element is fixed size and will neither grow, nor shrink
 - tat-f-1-1 - element will fully adapt its size to what is available
-- tat-f-0 to tat-f-11 - these concern only element growing above its predefined size. Keep in mind these numbers are proportions, so tat-f-2 will grow twice as much as tat-f-1 if they are in the same row.
-- tat-f--0 to tat-f--11 - same as above, but concern element shrinking.
 
 Flex units have no media queries in TAT. The idea behind flex units is to be natively adaptive. If you want to change proportions use the standard units.
 
@@ -77,9 +81,8 @@ The media query parameter goes after the "u" parameter: tat-u-sm-1-2, tat-u-lg-1
 
 The beauty of flexbox is that every unit can also be a container, so this is quite possible: class="tat-u-1-2 tat-r". And it will clean up your html big time!
 
-You can change the order of elements, no only be reversing the whole container, but individually. Since this has a more case-specific usage it is not part of the framework - you will have to do it in your site stylesheet.
+You can change the order of elements, no only be reversing the whole container, but individually. There are no classes in TAT.CSS for that - the usage is very site specific, so it doesn't make sense to include them here. 
 
-You can also change the alignment of single elements in the container. I.e. all are aligned to the top, but one is aligned to the bottom. This is in the roadmap to be featured in TAT.
 
 Examples
 --------

@@ -1,5 +1,5 @@
 /*!
-TAT CSS v0.8
+TAT CSS v1.0
 */
 
 /* CONTAINERS */
@@ -76,14 +76,20 @@ TAT CSS v0.8
 	-webkit-align-content: space-between; -ms-flex-line-pack: space-between; align-content: space-between; 
 }
 
-/* Self alignments - TO DO */
+/* Self alignments */
 
-.tat-s-top { }
-.tat-s-bottom { }
-.tat-s-middle { }
-.tat-s-left { }
-.tat-s-right { }
-.tat-s-center { }
+.tat-s-top { 
+	-webkit-align-self: flex-start; align-self: flex-start; 
+}
+.tat-s-bottom { 
+	-webkit-align-self: flex-end; align-self: flex-end; 
+}
+.tat-s-middle {
+	-webkit-align-self: center; align-self: center;
+}
+.tat-s-stretch {
+	-webkit-align-self: stretch; align-self: stretch;
+}
 
 /* Containers - media queries */
 
@@ -977,5 +983,10 @@ TAT CSS v0.8
 }
 
 /* Other */
-.tat-fill, .tat-img { width: 100%; height: auto; }
-.tat-contain { max-width: 100%; width: auto; max-height: 100%; height: auto; }
+.tat-fill, 
+.tat-img { 
+	width: 100%; height: auto; 
+}
+.tat-contain { 
+	max-width: 100%; width: auto; max-height: 100%; height: auto; 
+}
