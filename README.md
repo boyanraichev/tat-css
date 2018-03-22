@@ -4,7 +4,7 @@ Minimalistic flexbox CSS framework
 Objectives
 ----------
 
-CSS flexbox is already at around 98% browser support by usage. Thus, it is time to put an end to floats and inline-blocks and start creating beautiful responsive web sites using flexbox. If you prefer a minimalistic and non-opinionated CSS framework in the spirit of PURE CSS, you can give TAT a try. 
+CSS flexbox is already at around 98% browser support by usage. Thus, it is time to put an end to floats and inline-blocks and start creating beautiful responsive web sites using flexbox. If you prefer a minimalistic and non-opinionated CSS framework in the spirit of PURE CSS, you can give TAT a try. If you hate bloated frameworks like Bootstrap - you can give Tat a try.
 
 This frameworks aims to:
 - be very lightweight
@@ -18,7 +18,7 @@ Get Started
 -----------
 
 There is only one file you need to include: tat.min.css
-Doing a CSS reset/normalise is up to you and is not included, but have in mind that you should probably set box-sizing to border-box to your grid elements.
+Doing a CSS reset/normalise is up to you and is not included, but have in mind that you should probably set box-sizing to border-box to your grid elements. An optional normalise.css is included.
 
 **Naming logic**
 
@@ -30,7 +30,7 @@ There are 4 container types in TAT.CSS:
 - single row (tat-r)
 - single column (tat-c)
 - multiple rows grid (tat-g)
-- multiple columns (newspaper-style) grid (tat-n).
+- multiple columns (newspaper-style) grid (tat-n)
 
 Every grid can be reversed in order by adding the "-r" parameter, i.e. "tat-c-r" is a reversed single column.
 
@@ -42,7 +42,7 @@ The secondary axis alignments are: tat-top, tat-middle, tat-bottom, tat-vspace
 
 Important: remember these actually deal with you main axis, but are named as if your main axis is horizontal. So if using a column (vertical) grid than "left" will mean "top" in absolute terms and so forth. 
 
-**Element alignments**
+**Element self-alignments**
 
 There are currently for options that have good browser support - top, bottom, center and stretch (remember, these are along the secondary axis, not the main one!). The prefix is "tat-s", i.e. "tat-s-top".
 
@@ -60,14 +60,14 @@ class="tat-c tat-r-md" will produce a column order of elements in resolutions up
 
 **Flex units**
 
-The "flex" unit in flexbox is very powerful and has plenty of use-cases in responsive web design. TAT only features a few predefined flex units fromthe endless possibilities – the ones that will probably be used most often in your project.
+The "flex" unit in flexbox is very powerful and has plenty of use-cases in responsive web design. TAT only features a few predefined flex units from the endless possibilities – the ones that will probably be used most often in your project.
 
 - tat-f-0-1 - element will not grow, but will shrink if needed
 - tat-f-1-0 - element will grow to fill up space but will not shrink below its predefined width
 - tat-f-0-0 - element is fixed size and will neither grow, nor shrink
 - tat-f-1-1 - element will fully adapt its size to what is available
 
-Flex units have no media queries in TAT. The idea behind flex units is to be natively adaptive. If you want to change proportions use the standard units.
+Flex units have no media queries in TAT. The idea behind flex units is to be natively adaptive, or in other words - to be flexible. If you want to change proportions use the standard fixed-width units.
 
 **Fixed units**
 
@@ -79,10 +79,9 @@ The media query parameter goes after the "u" parameter: tat-u-sm-1-2, tat-u-lg-1
 
 **Other specifics**
 
-The beauty of flexbox is that every unit can also be a container, so this is quite possible: class="tat-u-1-2 tat-r". And it will clean up your html big time!
+The beauty of flexbox is that every unit can also be a container, so this is quite possible: class="tat-u-1-2 tat-r". And it will clean up your html big time - no more nested divs with no content!
 
-You can change the order of elements, no only be reversing the whole container, but individually. There are no classes in TAT.CSS for that - the usage is very site specific, so it doesn't make sense to include them here. 
-
+You can change the order of elements, not only by reversing the whole container, but individually. There are no classes in TAT.CSS for that at the moment - the usage is very site specific, so it doesn't make sense to include them here. 
 
 Examples
 --------
@@ -96,4 +95,4 @@ You probably start building a website from its header. Designing the header with
 </header>
 ```
 
-The logo div will remain the size of the image file (or the size set to #logo in your stylesheet), while the slogan div will fill in the remaining space and if the text longer it will break into multiple text rows, while the two divs are always middle-aligned (center-aligned column on mobile).
+The logo div will remain the size of the image file (or the size set to #logo in your stylesheet), while the slogan div will fill in the remaining space and if the text is longer it will break into multiple text rows, while the two divs are always middle-aligned (center-aligned column on mobile). Nice, isn't it?

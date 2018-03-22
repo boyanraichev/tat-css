@@ -1,0 +1,71 @@
+/* TAT CSS Base */
+
+/* BASE */
+
+html {
+	width: 100%; min-height: 100%; margin: 0; padding: 0; box-sizing: border-box; overflow-x: hidden;
+    -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 100%;
+    background: #ffffff;
+}
+
+body { 
+	width: 100%; margin: 0; padding: 0; box-sizing: border-box;
+	color: #444444; font-family: sans-serif; font-size: 1em; line-height: 1.5em; overflow-x: hidden;
+	/*-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; /* Fix for webkit rendering */
+	text-rendering: optimizeLegibility; text-rendering: geometricPrecision;
+}
+
+body.mobile { text-rendering: optimizeSpeed;}
+html.no-scroll,
+html.no-scroll body { overflow: hidden;  }
+body.mobile.modal-open { position: fixed; }
+
+div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, del, em, img, small, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, main {
+	margin: 0; padding: 0; border: 0; outline: 0; background: transparent; box-sizing: border-box; 
+}									
+
+div, article, aside, footer, header, hgroup, main, menu, nav, section { display: block; }
+
+a { text-decoration: none; }
+a { color: #000; }
+a:hover { color: #000; text-decoration: none; outline: 0; }
+p a:hover { text-decoration: underline; }
+a:active { outline: 0; }
+a:link { -webkit-tap-highlight-color: #000; } 
+
+hr { height: 0px; border: 0; border-top: 1px solid #ccc; margin: 0.75rem 0; padding: 0; }
+
+img { border: 0; max-width: 100%; height: auto; }
+img, 
+a img,
+td, 
+td img { vertical-align: middle; } 
+
+p { margin: 0 0 1.5rem 0; overflow-wrap: break-word; word-wrap: break-word; }
+p:last-child { margin-bottom: 0; }
+
+small { font-size: 0.8em; line-height: 1.5em; }
+del { text-decoration: line-through; }
+b, 
+strong, 
+th { font-weight: 700; }
+
+select, 
+input, 
+textarea, 
+button { color: #444; font-size: 1rem; }
+
+input[type="search"] { -webkit-appearance: textfield; }
+input[type="submit"], button { -webkit-appearance: none; }
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: middle; }
+
+input, 
+select, 
+textarea, 
+button { margin: 0; box-sizing: border-box; border: none; }
+
+button { width: auto; overflow: visible; }
+
+::-moz-focus-inner { padding: 0; border: 0; }
+:focus { outline: 0; }

@@ -385,6 +385,7 @@ TAT CSS v1.0
 
 .tat-u-0 { 
 	flex-basis: 0; 
+	width: 0;
 }
 
 .tat-u-1-24 {
@@ -505,6 +506,11 @@ TAT CSS v1.0
 
 @media screen and (min-width:35.5em){
 	
+	.tat-u-sm-0 { 
+		flex-basis: 0; 
+		width: 0;
+	}
+
 	.tat-u-sm-1-24 {
 	    width: 4.1667%;
 	}
@@ -624,6 +630,11 @@ TAT CSS v1.0
 
 
 @media screen and (min-width:48em){
+	
+	.tat-u-md-0 { 
+		flex-basis: 0; 
+		width: 0;
+	}
 	
 	.tat-u-md-1-24 {
 	    width: 4.1667%;
@@ -745,6 +756,11 @@ TAT CSS v1.0
 
 @media screen and (min-width:64em){
 	
+	.tat-u-lg-0 { 
+		flex-basis: 0; 
+		width: 0;
+	}
+	
 	.tat-u-lg-1-24 {
 	    width: 4.1667%;
 	}
@@ -864,6 +880,11 @@ TAT CSS v1.0
 
 
 @media screen and (min-width:80em){
+	
+	.tat-u-xl-0 { 
+		flex-basis: 0; 
+		width: 0;
+	}
 	
 	.tat-u-xl-1-24 {
 	    width: 4.1667%;
