@@ -388,6 +388,10 @@ TAT CSS v1.0
 	width: 0;
 }
 
+.tat-u-a { 
+	width: auto;
+}
+
 .tat-u-1-24 {
     width: 4.1667%;
 }
@@ -509,6 +513,10 @@ TAT CSS v1.0
 	.tat-u-sm-0 { 
 		flex-basis: 0; 
 		width: 0;
+	}
+	
+	.tat-u-sm-a { 
+		width: auto;
 	}
 
 	.tat-u-sm-1-24 {
@@ -636,6 +644,10 @@ TAT CSS v1.0
 		width: 0;
 	}
 	
+	.tat-u-md-a { 
+		width: auto;
+	}
+		
 	.tat-u-md-1-24 {
 	    width: 4.1667%;
 	}
@@ -759,6 +771,10 @@ TAT CSS v1.0
 	.tat-u-lg-0 { 
 		flex-basis: 0; 
 		width: 0;
+	}
+	
+	.tat-u-lg-a { 
+		width: auto;
 	}
 	
 	.tat-u-lg-1-24 {
@@ -886,6 +902,10 @@ TAT CSS v1.0
 		width: 0;
 	}
 	
+	.tat-u-xl-a { 
+		width: auto;
+	}
+		
 	.tat-u-xl-1-24 {
 	    width: 4.1667%;
 	}
