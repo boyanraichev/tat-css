@@ -26,6 +26,8 @@ div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, del, em, img, small
 
 div, article, aside, footer, header, hgroup, main, menu, nav, section { display: block; }
 
+*[hidden] { display: none; }
+
 a { text-decoration: none; }
 a { color: #000; }
 a:hover { color: #000; text-decoration: none; outline: 0; }
