@@ -11,6 +11,10 @@ TAT CSS v1.0
     display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
 }
 
+.tat-i {
+	display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex;
+}
+
 /* Single row/column containers */
 .tat-r { 
 	-webkit-flex-flow: row nowrap; -ms-flex-flow: row nowrap; flex-flow: row nowrap;  
