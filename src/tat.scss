@@ -2,6 +2,11 @@
 TAT CSS v1.1
 */
 
+$sm: 35.5em !default;
+$md: 48em !default;
+$lg: 64em !default;
+$xl: 80em !default;
+
 /* CONTAINERS */
 
 [class*=tat-r],
@@ -95,7 +100,7 @@ TAT CSS v1.1
 
 /* Containers - media queries */
 
-@media screen and (min-width:35.5em){
+@media screen and (min-width:$sm){
 	.tat-c-sm { 
     	flex-flow: column nowrap; 
 	}
@@ -151,7 +156,7 @@ TAT CSS v1.1
 		align-content: space-between; 
 	}
 }
-@media screen and (min-width:48em){
+@media screen and (min-width:$md){
 	.tat-c-md { 
     	flex-flow: column nowrap; 
 	}
@@ -207,7 +212,7 @@ TAT CSS v1.1
 		align-content: space-between; 
 	}
 }
-@media screen and (min-width:64em){
+@media screen and (min-width:$lg){
 	.tat-c-lg { 
     	flex-flow: column nowrap; 
 	}
@@ -263,7 +268,7 @@ TAT CSS v1.1
 		align-content: space-between; 
 	}
 }
-@media screen and (min-width:80em){
+@media screen and (min-width:$xl){
 	.tat-c-xl { 
     	flex-flow: column nowrap; 
 	}
@@ -510,7 +515,7 @@ TAT CSS v1.1
     width: 100%;
 }
 
-@media screen and (min-width:35.5em){
+@media screen and (min-width:$sm){
 	
 	.tat-u-sm-0 { 
 		flex-basis: 0; 
@@ -639,7 +644,7 @@ TAT CSS v1.1
 }
 
 
-@media screen and (min-width:48em){
+@media screen and (min-width:$md){
 	
 	.tat-u-md-0 { 
 		flex-basis: 0; 
@@ -768,7 +773,7 @@ TAT CSS v1.1
 }
 
 
-@media screen and (min-width:64em){
+@media screen and (min-width:$lg){
 	
 	.tat-u-lg-0 { 
 		flex-basis: 0; 
@@ -897,7 +902,7 @@ TAT CSS v1.1
 }
 
 
-@media screen and (min-width:80em){
+@media screen and (min-width:$xl){
 	
 	.tat-u-xl-0 { 
 		flex-basis: 0; 

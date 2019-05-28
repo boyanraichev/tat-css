@@ -1,0 +1,27 @@
+{
+  "name": "tat-css",
+  "version": "1.1.0",
+  "description": "Minimalistic CSS flexbox grid",
+  "main": "src/tat.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boyanraichev/tat-css.git"
+  },
+  "author": "Boyan Raichev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boyanraichev/tat-css/issues"
+  },
+  "homepage": "https://github.com/boyanraichev/tat-css#readme",
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "css",
+    "flexbox",
+    "grid"
+  ]
+}
